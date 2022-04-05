@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zakład Zagospodarowania Odpadów Racibórz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap" rel="stylesheet" />
+    <style>
+        *,
+        *::after,
+        *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+
+        html {
+            box-sizing: border-box;
+            font-size: 62.5%;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        @media only screen and (max-width: 1300px) {
+            html {
+                font-size: 50%;
+            }
+        }
+
+        body {
+            font-family: "Montserrat", sans-serif;
+            color: #231f20;
+            font-weight: 500;
+            line-height: 1.6;
+            background-color: #fdfdfd;
+        }
+
+        a,
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 64rem;
+            text-align: center;
+            padding: 2rem;
+            margin: 2rem auto 0 auto;
+        }
+
+        .logo {
+            margin-bottom: 9rem;
+        }
+
+        .header {
+            font-size: 5.6rem;
+            margin-bottom: 4rem;
+        }
+
+        .header span {
+            color: #ed1651;
+        }
+
+        .paragraph {
+            font-size: 1.8rem;
+            margin-bottom: 9rem;
+        }
+
+        .btn {
+            text-decoration: none;
+            display: inline-block;
+            background: #231f20;
+            font-weight: 400;
+            color: #fff !important;
+            transition: all 0s 0.2s;
+            border-radius: 0;
+            position: relative;
+            cursor: pointer;
+            font-size: 1.8rem;
+            padding: 1.3rem 3.4rem;
+            border: 1px solid #231f20;
+            position: relative;
+            user-select: none;
+        }
+
+        .btn:active {
+            top: 2px;
+        }
+
+        .btn::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #231f20;
+            pointer-events: none;
+            top: 10px;
+            right: -10px;
+            transition: all 0.2s;
+            transform: rotate(3.4deg);
+        }
+
+        .btn:hover::after {
+            top: 0;
+            right: 0;
+            transform: rotate(0);
+        }
+
+        .btn:hover {
+            background-color: #fff;
+            border: 1px solid #231f20;
+            color: #231f20 !important;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 11rem;
+        }
+
+        .footer__item {
+            display: flex;
+            gap: 1rem;
+            font-size: 1.6rem;
+            height: 44px;
+        }
+
+        .footer__item__link {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer__item__link a:hover {
+            text-decoration: underline;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .footer {
+                flex-direction: column;
+                gap: 5rem;
+                padding: 2rem;
+                margin-top: 6rem;
+            }
+            
+            .container {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <svg width="269" height="94" viewBox="0 0 269 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M104.835 93.4311H112.778L108.141 86.6084C109.434 85.9854 110.518 84.9975 111.258 83.7663C111.998 82.5351 112.363 81.1141 112.307 79.6781C112.307 74.5645 108.396 71.3483 102.254 71.3483H91.6362V93.4311H99.0687V87.833H101.085L104.835 93.4311ZM104.835 79.6781C104.835 81.2795 103.854 82.2618 101.811 82.2618H99.1225V77.0675H101.811C103.854 77.0675 104.835 78.0364 104.835 79.6512V79.6781Z"
+                    fill="#ED1651" />
+                <path
+                    d="M131.594 93.4311H139.282L129.646 71.3483H122.307L112.67 93.4311H120.237L121.716 89.5824H130.089L131.568 93.4311H131.594ZM123.786 84.2131L125.923 78.6689L128.073 84.2131H123.786Z"
+                    fill="#ED1651" />
+                <path
+                    d="M151.567 93.9289C153.447 94.0274 155.323 93.6787 157.042 92.9116C158.762 92.1444 160.275 90.9805 161.459 89.5151L156.768 85.3165C156.229 86.1021 155.509 86.7467 154.67 87.1962C153.83 87.6458 152.895 87.8872 151.943 87.9003C148.865 87.9003 146.782 85.7606 146.782 82.3829C146.782 79.0053 148.865 76.8656 151.943 76.8656C152.895 76.8809 153.829 77.1233 154.668 77.5726C155.507 78.022 156.227 78.6654 156.768 79.4493L161.459 75.2643C160.275 73.7989 158.762 72.6349 157.042 71.8678C155.323 71.1006 153.447 70.752 151.567 70.8504C144.484 70.8504 139.282 75.6141 139.282 82.3829C139.282 89.1517 144.484 93.9289 151.567 93.9289V93.9289Z"
+                    fill="#ED1651" />
+                <path d="M163.596 93.4176H171.028V71.3483H163.596V93.4176Z" fill="#ED1651" />
+                <path
+                    d="M192.264 81.8851C193.191 81.4734 193.975 80.7962 194.518 79.9389C195.061 79.0815 195.338 78.0824 195.315 77.0675C195.315 73.7302 192.479 71.2945 186.404 71.2945H174.617V93.431H187.036C193.111 93.431 196.35 91.1837 196.35 87.3351C196.347 86.1226 195.953 84.9435 195.226 83.9735C194.5 83.0036 193.48 82.2946 192.318 81.9523L192.264 81.8851ZM185.396 76.5023C187.063 76.5023 187.815 77.0675 187.815 78.144C187.815 79.2206 187.063 79.7858 185.396 79.7858H181.928V76.5561L185.396 76.5023ZM186.404 88.1694H181.928V84.7514H186.404C188.044 84.7514 188.864 85.3569 188.864 86.4873C188.864 87.6177 188.044 88.2232 186.404 88.2232V88.1694Z"
+                    fill="#ED1651" />
+                <path
+                    d="M207.223 69.5586H211.941L218.15 64.5123H211.43L207.277 69.5586H207.223ZM210.529 93.929C217.707 93.929 222.975 89.0711 222.975 82.383C222.975 75.6949 217.707 70.8505 210.529 70.8505C203.352 70.8505 198.084 75.7218 198.084 82.4503C198.084 89.1787 203.352 93.9963 210.529 93.9963V93.929ZM210.529 87.9003C207.841 87.9003 205.583 85.8279 205.583 82.383C205.583 78.938 207.788 76.8657 210.529 76.8657C213.271 76.8657 215.476 78.9515 215.476 82.383C215.476 85.8145 213.271 87.9003 210.529 87.9003Z"
+                    fill="#ED1651" />
+                <path
+                    d="M238.875 93.4311H246.818L242.181 86.6084C243.473 85.9848 244.555 84.9964 245.293 83.765C246.031 82.5336 246.393 81.113 246.335 79.6781C246.335 74.5645 242.437 71.3483 236.295 71.3483H225.677V93.4311H233.109V87.833H235.125L238.875 93.3907V93.4311ZM238.875 79.6781C238.875 81.2795 237.894 82.2618 235.851 82.2618H233.163V77.0675H235.851C237.894 77.0675 238.875 78.0364 238.875 79.6512V79.6781Z"
+                    fill="#ED1651" />
+                <path
+                    d="M258.028 87.6581L268.108 75.9237V71.3483H248.673V77.1213H258.431L248.351 88.8557V93.4176H268.605V87.6581H258.028Z"
+                    fill="#ED1651" />
+                <path
+                    d="M19.3811 32.6733L39.5685 9.16413V0H0.631836V11.5595H20.201L0.631836 34.3419V44.2327H39.5685V32.6733H19.3811Z"
+                    fill="#ED1651" />
+                <path
+                    d="M19.381 81.9793L39.5684 58.4836V49.3195H0.631696V60.8789H20.2008L0 84.388V93.5522H39.5684V81.9793H19.381Z"
+                    fill="#ED1651" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M45.0654 32.3907H56.4763V43.8156H45.0654V32.3907Z"
+                    fill="#0095DA" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M67.8872 11.4249H79.2981V0H67.8872V11.4249Z"
+                    fill="#00A651" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M56.4763 16.4039H67.8872V27.8288H56.4763V16.4039Z"
+                    fill="#FAA74A" />
+                <path
+                    d="M45.0654 81.9927V93.5522H79.298V49.3195H45.0654V81.9927ZM67.7527 81.9927H56.6241V60.9193H67.7527V81.9927Z"
+                    fill="#ED1651" />
+            </svg>
+        </div>
+        <h1 class="header">Strona w trakcie <br />budowy<span>.</span></h1>
+        <p class="paragraph">
+            Właśnie przygotowujemy dla Ciebie nową witrynę. Znajdziesz tutaj
+            wszystkie informacje o ZZO Racibórz, naszych usługach oraz współpracach.
+            Pojawimy się <strong>już wkrótce!</strong>
+            A do tego czasu zapraszamy na poniższą stronę.
+        </p>
+        <a href="https://zzo.bipraciborz.pl/" class="btn">Kliknij tutaj</a>
+    </div>
+    <footer class="footer">
+        <div class="footer__item">
+            <div class="footer__item__icon">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="44" height="44" fill="#231F20" />
+                    <path
+                        d="M15.258 16.9037C17.4989 23.0169 19.8188 25.4559 25.7206 28.0539L23.1629 31.6459C16.3858 28.4013 13.0103 22.932 11.4205 18.6638L15.258 16.9037Z"
+                        fill="white" />
+                    <path
+                        d="M17.1382 8.46406C18.3364 8.45937 19.2475 9.45644 19.1658 10.5855C19.0373 12.3622 19.1742 13.644 19.5426 15.233C19.7451 16.1058 19.2871 16.9922 18.5594 17.5632C17.5786 18.3328 16.8292 19.3134 16.2337 20.1575C15.4082 21.3275 12.5674 21.2435 11.9392 19.9688C10.648 17.3493 9.77302 12.5232 11.6584 9.26264C11.9546 8.75048 12.5509 8.482 13.1688 8.47958L17.1382 8.46406Z"
+                        fill="white" />
+                    <path
+                        d="M35.3272 27.8487C35.4762 26.7258 34.5377 25.7517 33.341 25.6925C31.4579 25.5993 30.1269 25.3169 28.501 24.7803C27.6079 24.4856 26.621 24.8083 25.9333 25.4219C25.0064 26.2489 23.8855 26.8336 22.9265 27.2904C21.5973 27.9237 21.3441 30.5972 22.6084 31.3395C25.2067 32.865 30.1745 34.2657 33.8287 32.8902C34.4027 32.6741 34.7567 32.1473 34.8335 31.5683L35.3272 27.8487Z"
+                        fill="white" />
+                </svg>
+            </div>
+            <div class="footer__item__link">
+                <a href="tel:+32 418 40 74">32 418 40 74</a>
+            </div>
+        </div>
+        <div class="footer__item">
+            <div class="footer__item__icon">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="44" height="44" fill="#231F20" />
+                    <path
+                        d="M22 10C17.5771 10 14 13.756 14 18.4C14 24.7 22 34 22 34C22 34 30 24.7 30 18.4C30 13.756 26.4229 10 22 10ZM22 21.4C20.4229 21.4 19.1429 20.056 19.1429 18.4C19.1429 16.744 20.4229 15.4 22 15.4C23.5771 15.4 24.8571 16.744 24.8571 18.4C24.8571 20.056 23.5771 21.4 22 21.4Z"
+                        fill="white" />
+                </svg>
+            </div>
+            <div class="footer__item__link">
+                ul. Rybnicka 125,<br />
+                47-400 Racibórz
+            </div>
+        </div>
+        <div class="footer__item">
+            <div class="footer__item__icon">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="44" height="44" fill="#231F20" />
+                    <path
+                        d="M32.4 12H11.6C10.17 12 9.013 13.125 9.013 14.5L9 29.5C9 30.875 10.17 32 11.6 32H32.4C33.83 32 35 30.875 35 29.5V14.5C35 13.125 33.83 12 32.4 12ZM32.4 17L22 23.25L11.6 17V14.5L22 20.75L32.4 14.5V17Z"
+                        fill="white" />
+                </svg>
+            </div>
+            <div class="footer__item__link">
+                <a href="mailto:biuro@zzo-raciborz.pl">biuro@zzo-raciborz.pl</a>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
